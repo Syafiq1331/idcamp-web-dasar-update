@@ -1,0 +1,111 @@
+/* Poppin import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Tambahkan box-sizing untuk menghindari masalah layout */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1e293b;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  background-color: #0f172a;
+  padding: 20px 50px;
+}
+
+nav h1 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #0ea5e9;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Custom Class */
+#content {
+  margin: 40px auto;
+  width: 35%;
+}
+
+article {
+  background-color: #475569;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+article h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+article p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+article a {
+  color: #0ea5e9;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    margin: 20px 0;
+  }
+
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  #content {
+    width: 75%;
+  }
+
+}
